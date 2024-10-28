@@ -13,27 +13,43 @@
 <body class="bg-white min-h-screen">
     <header class=" mt-3 text-center">
         <h1 class="text-[#111111] text-4xl font-semibold">AL Universe Hub</h1>
-        <button class="bg-[#EB5757] mt-8 hover:bg-[#EB5757E6] rounded-3xl p-4 px-6 font-semibold text-white">Sort By
+        <button
+            class="btn bg-[#EB5757] border-none mt-8 hover:bg-[#EB5757E6] rounded-3xl p-4 px-6 font-semibold text-white">Sort
+            By
             Date</button>
     </header>
-    <main class="mt-8 container">
-        <div id="displayUniverse">
-            <div class="card bg-base-100 w-96 shadow-xl">
-                <figure>
-                    <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title">
-                        Shoes!
-                        <div class="badge badge-secondary">NEW</div>
-                    </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                        <div class="badge badge-outline">Fashion</div>
-                        <div class="badge badge-outline">Products</div>
+    <main class="mt-8 container mx-auto">
+        <div id="displayUniverse" class="grid grid-cols-3  my-4 gap-6">
+        </div>
+
+        <div class="text-center">
+            <button
+                class="btn  bg-[#EB5757] mt-8 hover:bg-[#EB5757E6] rounded-3xl p-4 px-6 font-semibold text-white border-none">See
+                More</button>
+        </div>
+
+
+        <!-- modal -->
+        <!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+        <div id="">
+            <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="">open modal</button> -->
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+
+                    <h3 class="text-lg font-bold"></h3>
+                    <div id="modal-data">
+
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
                     </div>
                 </div>
-            </div>
+            </dialog>
+
         </div>
     </main>
     <footer></footer>
